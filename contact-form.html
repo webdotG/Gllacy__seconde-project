@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Gllacy shop</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500,400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="no-js">
+	<div class="wrapper">
+		<header class="main-header container">
+			<div class="main-header__logo">
+				<a href="index.html"><img src="img/logo.png" alt="Gllacy" width="154" height="64"></a>
+			</div>
+			<nav class="main-header__menu">
+				<ul>
+					<li><a href="catalog.html">Каталог</a>
+						<div class="sub-menu__wrapper">
+							<ul class="main-header__sub-menu">
+								<li>Новинки</li><!--
+								--><li><a href="catalog.html">Сливочное</a></li><!--
+								--><li><a href="#">Щербеты</a></li><!--
+								--><li><a href="#">Фруктовый лед</a></li><!--
+								--><li><a href="#">Мелорин</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">О Компании</a></li>
+				</ul>
+			</nav>
+			<div class="main-header__bar">
+				<div class="bar__item">
+					<a href="#" class="icon-search"></a>
+					<div class="form-wrapper">
+						<form method="POST" class="form-search">
+							<input type="text" placeholder="Что ищем?">
+						</form>
+					</div>
+				</div>
+
+				<div class="bar__item">
+					<a href="#" class="icon-login">Вход</a>
+					<div class="form-wrapper">
+						<form method="POST" class="form-enter">
+							<input type="email" placeholder="Электронная почта">
+							<input type="password" placeholder="Пароль">
+							<div class="flex-wrapper">
+								<input type="submit" value="Войти" class="btn">
+								<div>
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Новая регистрация</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="bar__item">
+					<a class="icon-basket" href="#">Пусто</a>
+					<div class="basket-wrapper">
+						<div class="basket-inner">
+							<ul class="basket-item">
+								<li><a href="#" class="icon-cancel"></a></li>
+								<li class="basket-item__img">
+									<img src="img/ice-cream1.png" alt="Пломбир с апельсиновым джемом" width="33">
+								</li>
+								<li>Пломбир с апельсиновым джемом</li>
+								<li>1,5 кг <span>х 200 руб.</span></li>	
+								<li>300 руб.</li>			
+							</ul>
+							<ul class="basket-item">
+								<li class="icon-cancel"></li>
+								<li class="basket-item__img">
+									<img src="img/ice-cream3.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33">
+								</li>
+								<li>Клубничный пломбир с присыпкой<br>из белого шоколада</li>
+								<li>1,5 кг <span>х 300 руб.</span></li>	
+								<li>450 руб.</li>	
+							</ul>
+							<div class="order-result">
+								<strong>Итого: 750 руб.</strong>
+								<a href="#" class="btn">Оформить заказ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="contact-form no-js">
+				<span class="icon-cancel"></span>
+				<p>Мы обязательно вам ответим!</p>
+				<form action="action.php" method="POST">
+					<div class="form-row">
+						<input id="input-text" type="text" name="name" placeholder="Как вас зовут?" required>
+						<label for="input-text">Как вас зовут?</label>
+					</div>
+					<div class="form-row">
+						<input id="input-email" type="email" name="email" placeholder="Ваша почта для ответа?" required>
+						<label for="input-email">Ваша почта для ответа?</label>
+					</div>
+					<textarea placeholder="Напишите что-нибудь..."></textarea>
+					<input type="submit" value="Отправить" class="btn">
+				</form> 
+			</div>
+		</main>
+
+		<footer class="main-footer container index-footer">
+			<div class="main-footer__item">
+				<a href="#"><span class="icon-twitter"></span></a>
+	          	<a href="#"><span class="icon-instagram"></span></a>
+	          	<a href="#"><span class="icon-facebook"></span></a>
+	          	<a href="#"><span>В</span></a>
+			</div>
+			<div class="main-footer__item">
+				<div>
+					<a href="#"><span class="icon-heart"></span>Для поставщиков</a>
+					<a href="#">О производстве</a>
+				</div>
+				<div>
+					<a href="#">Наши документы</a>
+					<a href="#">Экологические стандарты</a>
+				</div>
+			</div>
+			<div class="main-footer__item">
+				<img src="img/academy-logo.png" alt="HTML Academy" width="108" height="38">
+				<p>Сделано в <a href="#" target="_blank">HTML Academy</a> &copy; 2016</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
